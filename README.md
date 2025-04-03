@@ -76,13 +76,13 @@ DocuSnap 앱은 계층별 책임 분리를 통해 유지보수와 확장성을 �
 
 ### 주요 화면
 
-![image.png](attachment:9efb376e-edae-4fef-894c-bf20cdb9b13f:image.png)
+![홈화면1](assets/home_1.jpg)
 
-![image.png](attachment:0228daba-f7d2-485a-bf57-e7d76bc54fce:image.png)
+![홈화면2](assets/home_2.jpg)
 
-![image.png](attachment:794718d5-aa7a-40c3-b945-76d6928a919f:image.png)
+![홈화면3](assets/home_3.jpg)
 
-![image.png](attachment:aec877c5-d767-4bd5-b3f1-8f7e3debfb6d:image.png)
+![홈화면4](assets/home_4.jpg)
 
 1. **홈 화면**
 - 데이터 출력
@@ -100,13 +100,13 @@ DocuSnap 앱은 계층별 책임 분리를 통해 유지보수와 확장성을 �
 
 ---
 
-![image.png](attachment:c44552a7-004b-41b3-a7ff-24af95467da4:image.png)
+![상세1](assets/detail_1.jpg)
 
-![image.png](attachment:1e291200-7dfb-4832-91a5-c257c75680f4:image.png)
+![상세2](assets/detail_2.jpg)
 
-![image.png](attachment:0267e75e-1b1e-47e2-8e3c-97d7c3fe492b:image.png)
+![상세3](assets/detail_3.jpg)
 
-![image.png](attachment:c1c89261-1376-4800-ba1e-0c833cae9ad9:image.png)
+![상세4](assets/detail_4.jpg)
 
 1. **상세 화면**
 - 화면 구성
@@ -128,11 +128,11 @@ DocuSnap 앱은 계층별 책임 분리를 통해 유지보수와 확장성을 �
 
 ---
 
-![image.png](attachment:34c7f47a-acfb-4335-a2bb-0455f52fb494:image.png)
+![마이페이지1](assets/mypage_1.jpg)
 
-![image.png](attachment:9d015981-e68e-4556-a314-fbb1fdfa0965:image.png)
+![마이페이지2](assets/mypage_2.jpg)
 
-![image.png](attachment:76860c74-f853-4f6f-950f-9ba44d23e1df:image.png)
+![마이페이지3](assets/mypage_3.jpg)
 
 1. **마이페이지 화면**
 - 화면 구성
