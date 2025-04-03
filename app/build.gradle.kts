@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -5,6 +7,18 @@ plugins {
     id("dagger.hilt.android.plugin")
     id("com.google.gms.google-services")
 }
+
+val localProperties = Properties().apply {
+    val localPropertiesFile = rootProject.file("local.properties")
+    if (localPropertiesFile.exists()) {
+        localPropertiesFile.reader().use { load(it) }
+    }
+}
+
+val kakaoNativeAppKey: String = localProperties.getProperty("kakao.native.app.key") ?: ""
+val naverClientId: String = localProperties.getProperty("naver.client.id") ?: ""
+val naverClientSecret: String = localProperties.getProperty("naver.client.secret") ?: ""
+val naverClientName: String = localProperties.getProperty("naver.client.name") ?: ""
 
 android {
     namespace = "kr.co.docusnap"
@@ -18,6 +32,13 @@ android {
         versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders["kakaoNativeAppKey"] = "kakao$kakaoNativeAppKey"
+
+        buildConfigField("String", "KAKAO_NATIVE_APP_KEY", "\"$kakaoNativeAppKey\"")
+        buildConfigField("String", "NAVER_CLIENT_ID", "\"$naverClientId\"")
+        buildConfigField("String", "NAVER_CLIENT_SECRET", "\"$naverClientSecret\"")
+        buildConfigField("String", "NAVER_CLIENT_NAME", "\"$naverClientName\"")
     }
 
     buildTypes {
