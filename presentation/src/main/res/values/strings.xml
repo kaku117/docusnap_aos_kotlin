@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">DocuSnap</string>
+
+    <string name="common_dialog_ok">확인</string>
+    <string name="common_dialog_cancel">취소</string>
+
+    <string name="home_screen_empty_file_msg">불러올 문서가 없습니다.</string>
+    <string name="favorite_screen_empty_file_msg">즐겨찾기 문서가 없습니다.</string>"
+
+    <string name="data_clear_dialog_title">주의</string>
+    <string name="data_clear_dialog_message">데이터 삭제 시 모든 파일과 데이터가 삭제됩니다.</string>
+
+    <string name="gms_document_scanning_failed_msg">스캐너 도구를 실행할 수 없습니다.</string>
+
+    <string name="google_sign_in_button_text">Sign in with Google</string>
+    <string name="google_sign_in_failed_msg">구글 로그인에 실패했습니다.</string>
+
+    <string name="kakao_sign_in_button_text">카카오 로그인</string>
+    <string name="kakao_sign_in_failed_msg">카카오 로그인에 실패했습니다.</string>
+    <string name="kakao_sign_in_cancel_msg">카카오 로그인이 취소되었습니다.</string>
+    <string name="kakao_request_user_info_failed_msg">카카오 유저 정보 조회에 실패했습니다.</string>
+
+    <string name="naver_sign_in_button_text">네이버 로그인</string>
+    <string name="naver_sign_in_failed_msg">네이버 로그인에 실패했습니다.</string>
+    <string name="naver_request_user_info_failed_msg">네이버 유저 정보 조회에 실패했습니다.</string>
+
+    <string name="social_sign_out_button_text">로그아웃 하기</string>
+
+    <string name="data_clear_button_text">데이터 삭제</string>
+    <string name="data_clear_completed_msg">데이터 삭제가 정상처리 되었습니다.</string>
+    <string name="data_clear_failed_msg">데이터 삭제에 실패했습니다.</string>
+
+    <string name="lock_file_notify_title">문서 잠금</string>
+    <string name="lock_file_notify_msg">문서를 잠그려면 보안을 위해 생체 인식 인증이 필요합니다.</string>
+
+    <string name="locked_file_access_notify_title">문서 접근 인증</string>
+    <string name="locked_file_access_notify_msg">잠긴 문서입니다. 보안을 위해 생체 인식 인증이 필요합니다.</string>
+
+    <string name="lock_image_notify_title">사진 잠금</string>
+    <string name="lock_image_notify_msg">사진을 잠그려면 보안을 위해 생체 인식 인증이 필요합니다.</string>
+
+    <string name="locked_image_access_notify_title">사진 접근 인증</string>
+    <string name="locked_image_access_notify_msg">잠긴 사진입니다. 보안을 위해 생체 인식 인증이 필요합니다.</string>
+
+    <string name="share_file_notify_title">PDF 문서를 공유 방법을 선택해주세요.</string>
+    <string name="share_image_notify_title">이미지를 공유 방법을 선택해주세요.</string>
+</resources>
