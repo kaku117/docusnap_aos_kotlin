@@ -77,10 +77,10 @@ DocuSnap 앱은 계층별 책임 분리를 통해 유지보수와 확장성을 �
 ### 주요 화면
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
-    <img src="assets/home_1.jpg" alt="홈화면1" width="230" />
-    <img src="assets/home_2.jpg" alt="홈화면2" width="230" />
-    <img src="assets/home_3.jpg" alt="홈화면3" width="230" />
-    <img src="assets/home_4.jpg" alt="홈화면4" width="230" />
+    <img src="assets/home_1.jpg" alt="홈화면1" width="200" />
+    <img src="assets/home_2.jpg" alt="홈화면2" width="200" />
+    <img src="assets/home_3.jpg" alt="홈화면3" width="200" />
+    <img src="assets/home_4.jpg" alt="홈화면4" width="200" />
 </div>
 
 1. **홈 화면**
@@ -100,10 +100,10 @@ DocuSnap 앱은 계층별 책임 분리를 통해 유지보수와 확장성을 �
 ---
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
-    <img src="assets/detail_1.jpg" alt="상세1" width="230" />
-    <img src="assets/detail_2.jpg" alt="상세2" width="230" />
-    <img src="assets/detail_3.jpg" alt="상세3" width="230" />
-    <img src="assets/detail_4.jpg" alt="상세4" width="230" />
+    <img src="assets/detail_1.jpg" alt="상세1" width="200" />
+    <img src="assets/detail_2.jpg" alt="상세2" width="200" />
+    <img src="assets/detail_3.jpg" alt="상세3" width="200" />
+    <img src="assets/detail_4.jpg" alt="상세4" width="200" />
 </div>
 
 1. **상세 화면**
@@ -127,9 +127,9 @@ DocuSnap 앱은 계층별 책임 분리를 통해 유지보수와 확장성을 �
 ---
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
-    <img src="assets/mypage_1.jpg" alt="마이페이지1" width="230" />
-    <img src="assets/mypage_2.jpg" alt="마이페이지2" width="230" />
-    <img src="assets/mypage_3.jpg" alt="마이페이지3" width="230" />
+    <img src="assets/mypage_1.jpg" alt="마이페이지1" width="200" />
+    <img src="assets/mypage_2.jpg" alt="마이페이지2" width="200" />
+    <img src="assets/mypage_3.jpg" alt="마이페이지3" width="200" />
 </div>
 
 1. **마이페이지 화면**
