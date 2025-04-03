@@ -130,6 +130,7 @@ DocuSnap 앱은 계층별 책임 분리를 통해 유지보수와 확장성을 �
     <img src="assets/mypage_1.jpg" alt="마이페이지1" width="200" />
     <img src="assets/mypage_2.jpg" alt="마이페이지2" width="200" />
     <img src="assets/mypage_3.jpg" alt="마이페이지3" width="200" />
+    <img src="assets/mypage_4.jpg" alt="마이페이지4" width="200" />
 </div>
 
 1. **마이페이지 화면**
@@ -142,3 +143,6 @@ DocuSnap 앱은 계층별 책임 분리를 통해 유지보수와 확장성을 �
     - 로그아웃 버튼 클릭 시 로그인 유저 정보를 DB에서 삭제합니다.
 - 데이터 삭제
     - 로그인 된 상태에서 데이터 삭제 버튼 클릭 시 내부저장소에 저장된 파일과 관련된 DB 데이터를 모두 삭제합니다.
+- 라이브러리 라이센스
+    - 앱에서 사용된 라이브러리 라이센스 화면입니다. 
+
