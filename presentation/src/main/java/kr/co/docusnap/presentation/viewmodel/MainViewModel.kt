@@ -31,6 +31,7 @@ import kr.co.docusnap.presentation.ui.DocumentViewerNav
 import kr.co.docusnap.presentation.ui.ImageViewerNav
 import kr.co.docusnap.presentation.utils.NavigationUtils
 import kr.co.docusnap.presentation.utils.StringResUtils
+import kr.co.docusnap.presentation.utils.ToastUtils
 import javax.inject.Inject
 
 @HiltViewModel
@@ -141,7 +142,7 @@ class MainViewModel @Inject constructor(
                         }
                     },
                     onFailed = { failedMsg ->
-                        Toast.makeText(context, failedMsg, Toast.LENGTH_SHORT).show()
+                        ToastUtils.showShortToast(failedMsg)
                     }
                 )
             } else {

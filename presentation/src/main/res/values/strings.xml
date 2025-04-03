@@ -30,6 +30,8 @@
     <string name="data_clear_completed_msg">데이터 삭제가 정상처리 되었습니다.</string>
     <string name="data_clear_failed_msg">데이터 삭제에 실패했습니다.</string>
 
+    <string name="license_report_button_text">라이브러리 라이센스</string>
+
     <string name="lock_file_notify_title">문서 잠금</string>
     <string name="lock_file_notify_msg">문서를 잠그려면 보안을 위해 생체 인식 인증이 필요합니다.</string>
 

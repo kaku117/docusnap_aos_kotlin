@@ -5,6 +5,7 @@ import android.content.Intent
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import androidx.navigation.NavHostController
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.firebase.auth.FirebaseAuth
 import com.kakao.sdk.auth.model.OAuthToken
@@ -24,6 +25,7 @@ import kotlinx.coroutines.withContext
 import kr.co.docusnap.domain.model.AccountInfo
 import kr.co.docusnap.domain.usecase.MyPageUseCase
 import kr.co.docusnap.presentation.R
+import kr.co.docusnap.presentation.utils.NavigationUtils
 import kr.co.docusnap.presentation.utils.ToastUtils
 import javax.inject.Inject
 
@@ -227,5 +229,9 @@ class MyPageViewModel @Inject constructor(
                 false -> ToastUtils.showShortToast(context.getString(R.string.data_clear_failed_msg))
             }
         }
+    }
+
+    fun showMyPageSubScreen(navController: NavHostController, route: String) {
+        NavigationUtils.navigate(navController, route)
     }
 }

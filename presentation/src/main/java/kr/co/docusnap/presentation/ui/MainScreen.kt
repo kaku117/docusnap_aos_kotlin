@@ -16,6 +16,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import kr.co.docusnap.presentation.model.MainVM
 import kr.co.docusnap.presentation.ui.favorite.FavoriteScreen
+import kr.co.docusnap.presentation.ui.license.LicenseReportScreen
 import kr.co.docusnap.presentation.ui.main.HomeScreen
 import kr.co.docusnap.presentation.ui.my_page.MyPageScreen
 import kr.co.docusnap.presentation.ui.viewer.DocumentViewerScreen
@@ -94,7 +95,7 @@ fun MainNavigateScreen(
             FavoriteScreen(modifier, navController, viewModel)
         }
         composable(MainNav.MyPage.route) {
-            MyPageScreen()
+            MyPageScreen(navController)
         }
         composable(
             route = DocumentViewerNav.routeWithArgName(),
@@ -117,6 +118,9 @@ fun MainNavigateScreen(
                 val convertModel = viewModel.convertModelToModelVM(model) as MainVM
                 ImageViewerScreen(viewModel, convertModel)
             }
+        }
+        composable(LicenseReportScreenNav.route) {
+            LicenseReportScreen()
         }
     }
 }

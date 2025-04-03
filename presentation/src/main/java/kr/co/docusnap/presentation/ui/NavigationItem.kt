@@ -13,11 +13,11 @@ import androidx.navigation.NavType
 import androidx.navigation.navArgument
 import androidx.navigation.navDeepLink
 import kr.co.docusnap.domain.model.ScanFile
+import kr.co.docusnap.presentation.ui.DocumentViewerNav.argName
 import kr.co.docusnap.presentation.ui.NavigationRouteName.DEEP_LINK_SCHEME
 import kr.co.docusnap.presentation.ui.NavigationRouteName.MAIN_FAVORITE
 import kr.co.docusnap.presentation.ui.NavigationRouteName.MAIN_HOME
 import kr.co.docusnap.presentation.ui.NavigationRouteName.MAIN_MY_PAGE
-import kr.co.docusnap.presentation.ui.TempNav.argName
 import kr.co.docusnap.presentation.utils.GsonUtils
 
 sealed class MainNav(
@@ -43,29 +43,11 @@ sealed class MainNav(
     }
 }
 
-object TempNav: DestinationWithArgs<String> {
-    override val route: String = NavigationRouteName.TEMP
-    override val argName: String = "temp"
-
-    override val arguments: List<NamedNavArgument> = listOf(
-        navArgument(argName) { type = NavType.StringType }
-    )
-
+object LicenseReportScreenNav: Destination {
+    override val route: String = NavigationRouteName.LIBRARY_LICENSE
     override val deepLinks: List<NavDeepLink> = listOf(
-        navDeepLink { uriPattern = "$DEEP_LINK_SCHEME$argName" }
+        navDeepLink { uriPattern = "$DEEP_LINK_SCHEME$route" }
     )
-
-    override fun findArgument(navBackStackEntry: NavBackStackEntry): String? {
-        // TODO : 임시
-        return navBackStackEntry.arguments?.getString(argName)
-    }
-
-    override fun navigationWithArg(item: String): String {
-        // TODO : 임시
-        return "$route/$item"
-    }
-
-
 }
 
 object DocumentViewerNav: DestinationWithArgs<ScanFile> {
@@ -141,5 +123,5 @@ object NavigationRouteName {
     const val QR_CODE_SCAN = "qr_code_scan"
     const val DOCUMENT_VIEWER = "document_viewer"
     const val IMAGE_VIEWER = "image_viewer"
-    const val TEMP = "temp"
+    const val LIBRARY_LICENSE = "library_license"
 }

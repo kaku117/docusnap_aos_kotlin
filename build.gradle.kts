@@ -16,4 +16,14 @@ plugins {
     id("com.google.dagger.hilt.android") version "2.51" apply false
     id("com.google.devtools.ksp") version "1.9.25-1.0.20" apply false
     id("com.google.gms.google-services") version "4.3.13" apply false
+    id("com.jaredsburrows.license") version "0.8.91" apply false
+}
+
+subprojects {
+    plugins.withId("com.android.application") {
+        apply(plugin = "com.jaredsburrows.license")
+    }
+    plugins.withId("com.android.library") {
+        apply(plugin = "com.jaredsburrows.license")
+    }
 }

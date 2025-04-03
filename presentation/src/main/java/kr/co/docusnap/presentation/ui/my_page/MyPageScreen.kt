@@ -38,12 +38,15 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.navigation.NavHostController
 import kr.co.docusnap.presentation.R
+import kr.co.docusnap.presentation.ui.LicenseReportScreenNav
 import kr.co.docusnap.presentation.ui.common.MessageDialog
 import kr.co.docusnap.presentation.viewmodel.MyPageViewModel
 
 @Composable
 fun MyPageScreen(
+    navController: NavHostController,
     viewModel: MyPageViewModel = hiltViewModel()
 ) {
     val context = LocalContext.current
@@ -119,6 +122,17 @@ fun MyPageScreen(
                 ) {
                     Text(
                         text = stringResource(id = R.string.data_clear_button_text)
+                    )
+                }
+
+                Button(
+                    onClick = {
+                        viewModel.showMyPageSubScreen(navController, LicenseReportScreenNav.route)
+                    },
+                    modifier = Modifier.padding(top = 10.dp)
+                ) {
+                    Text(
+                        text = stringResource(id = R.string.license_report_button_text)
                     )
                 }
 
